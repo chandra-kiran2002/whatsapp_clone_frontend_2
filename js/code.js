@@ -20,6 +20,9 @@ var chat=[1,2,3,4,5,6,7,8,9,10]
                 from=x[1]
                 document.getElementById("chat-user").innerHTML=x[0]
                 update()}
+                else{
+                    window.location.href = "index.html"
+                }
             }
             window.onbeforeunload = function () {
             alert("fgsdgs")
