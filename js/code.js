@@ -7,7 +7,8 @@ var chat=[1,2,3,4,5,6,7,8,9,10]
             console.log("sacac")
             console.log(document.cookie)
             // var cookie_value=
-                var x =document.cookie.split(";")[0].split("=")[1].split(" ")
+                if(document.cookie!=""){
+                    var x =document.cookie.split(";")[0].split("=")[1].split(" ")
                 console.log(x)
                 if(x[2]!="success_chat"){
                     window.location.href = "index.html";
@@ -18,7 +19,7 @@ var chat=[1,2,3,4,5,6,7,8,9,10]
                 }
                 from=x[1]
                 document.getElementById("chat-user").innerHTML=x[0]
-                update()
+                update()}
             }
             window.onbeforeunload = function () {
             alert("fgsdgs")

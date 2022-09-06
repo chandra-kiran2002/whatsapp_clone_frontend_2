@@ -40,10 +40,10 @@
         window.onload = function exampleFunction() {
             // var cookie_value=
             console.log(document.cookie)
-                var x =document.cookie.split(";")[0].split("=")[1].split(" ")
+            if(document.cookie!=""){var x =document.cookie.split(";")[0].split("=")[1].split(" ")
                 if(x[2]=="success_chat"){
                     window.location.href = "chat_app.html";
-                }
+                }}
             }
      function fun(){
                 var myHeaders = new Headers();
