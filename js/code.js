@@ -49,6 +49,7 @@ var chat=[1,2,3,4,5,6,7,8,9,10]
                 }
             }
           function fun(){
+            currentTo=null;
             if(screen.width < 767){
             removestylelinks()
             create("css/persons.css")
