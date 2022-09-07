@@ -130,7 +130,7 @@ body{
     position: relative;
 }
 .message{
-    max-width: 25vw;
+    max-width: 35vw;
 }
 
 .chat .chat-history .message:after {
