@@ -186,10 +186,10 @@ var chat=[1,2,3,4,5,6,7,8,9,10]
                     for(var i=0;i<result.length;i++){
                         if(result[i].from==from){
                             console.log(result[i].from+"  "+from)
-                            chatresult+="<li class='clearfix'><div class='message-data text-right'><span class='message-data-time'>10:10 AM, Today</span></div><div class='message other-message float-right'>"+result[i].message+"</div></li>"
+                            chatresult+="<li class='clearfix'><div class='message-data text-right'></div><div class='message other-message float-right'>"+result[i].message+"</div></li>"
                         }
                         else{
-                            chatresult+="<li class='clearfix'><div class='message-data text-right'><span class='message-data-time'>10:10 AM, Today</span></div><div class='message my-message'>"+result[i].message+"</div></li>"
+                            chatresult+="<li class='clearfix'><div class='message-data text-right'></div><div class='message my-message'>"+result[i].message+"</div></li>"
                         }
                     }
                     document.getElementById("chatting").innerHTML=chatresult
